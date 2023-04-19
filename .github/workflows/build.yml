@@ -34,7 +34,7 @@ jobs:
           qemu-system-riscv64 --version
           rustup target add riscv64gc-unknown-none-elf
           git config --global --add safe.directory "*"
-          git config --global --add safe.directory /__w/2023s-rcore-WaterStop/2023s-rcore-WaterStop/os
+          git config --global --add safe.directory /__w/2023s-rcore-WaterStop/2023s-rcore-WaterStop/os/target/release/build/os-1cc9c787a5713d2f/build-script-build
           cd os && make run
   gitlab-mirror:
     if: github.repository == 'LearningOS/rCore-Tutorial-Code-2023S'
